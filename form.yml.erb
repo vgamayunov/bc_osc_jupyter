@@ -14,10 +14,17 @@ attributes:
     min: 1
     max: 48
     step: 1
-    id: 'hours'
+    id: "hours"
   slot_type:
-    id: 'slot_type'
-    value: 'execute'
+    id: "slot_type"
+    value: "execute"
+  container_image:
+    id: "container_image"
+    label: "Container Image"
+    widget: "text_field"
+    value: "jupyter/scipy-notebook"
+    help: |
+      This image requires jupyter installed and in the path.
   working_dir:
     label: "Working Directory"
     data-filepicker: true
