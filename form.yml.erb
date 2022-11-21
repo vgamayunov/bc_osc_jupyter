@@ -32,3 +32,10 @@ attributes:
     data-target-file-type: dirs  # Valid values are: files, dirs, or both
     readonly: false
     help: "Select your project directory; defaults to $HOME"
+  container_mounts:
+    id: "container_mounts"
+    label: "Additional Container Mounts"
+    widget: "text_field"
+    value: ""
+    help: |
+      Comma-separated list of additional mount[s] inside the container. Format: SRC:DST[,SRC:DST...]
